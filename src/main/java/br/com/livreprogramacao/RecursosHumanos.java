@@ -14,7 +14,7 @@ import javax.persistence.Id;
 @Entity
 public class RecursosHumanos extends Departamento implements Serializable {
 
-    private static final long serialVersionUID = 4351255908460061537L;
+    private static final long serialVersionUID = 43512508460061537L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

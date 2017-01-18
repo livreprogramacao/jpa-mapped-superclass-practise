@@ -18,10 +18,10 @@ public abstract class EntityBase implements Serializable {
     
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id", nullable = false)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
 
     @Column(name = "optlock", columnDefinition = "integer DEFAULT 0", nullable = false)

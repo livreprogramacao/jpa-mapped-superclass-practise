@@ -3,7 +3,6 @@ package br.com.livreprogramacao;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 /**
  *
@@ -17,9 +16,6 @@ public class Marca extends EntityBase implements Serializable {
     @Basic
     private String nome;
     
-    @Id
-    private Long id;
-
     protected Marca() {}
 
     public Marca(final Long _id, final String nome) {
@@ -38,14 +34,6 @@ public class Marca extends EntityBase implements Serializable {
 
     public void setNome(final String nome) {
         this.nome = nome;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
 }
